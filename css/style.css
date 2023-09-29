@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body 
+{
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+}
+
+
+.divider {
+    border-top: 1px solid #ccc; /* Adjust the color and style as needed */
+    margin-top: 20px; /* Adjust the margin-top value to control the spacing */
+}
+
+
+.navbar {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+    flex: 1;
+    text-align: right;
+}
+
+nav ul {
+    display: inline-block;
+    list-style: none;
+}
+
+nav ul li {
+    display: inline-block;
+    position: relative; /* Add relative positioning */
+    transition: background-color 0.3s, color 0.3s;
+    padding: 1.2rem;
+}
+
+/* Add a transparent border around the text */
+nav ul li a {
+    text-decoration: none;
+    color: #000000;
+    border: 2px solid transparent; /* Transparent border */
+    padding: 0.5rem 1rem; /* Adjust padding as needed */
+}
+
+/* Change the border color on hover */
+nav ul li:hover a {
+    border-radius: 8px;
+    color: #ffffff;
+    background-color: #000000;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-top: 2rem;
+}
+
+.row .col-2 {
+    flex-basis: 50%;
+    min-width: 200px;
+}
+
+.row .col-2 img {
+    max-width: 100%;
+}
+
+.row .col-2 h1 {
+    font-size: 45px;
+    line-height: 60px;
+}
+
+.row .col-2 .see-more {
+    display: inline-block;
+    background-color:darkgreen;
+    border-radius: 8px;
+    color: #ffffff;
+    padding: 0.5rem 3rem;
+    text-decoration: none;
+    margin: 2.5rem 0.5rem;
+}
+
+.container {
+    max-width: 1366px;
+    margin: auto;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header .row {
+ padding-top: 10rem;
+}
+
