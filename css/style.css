@@ -7,20 +7,14 @@
 body 
 {
     font-family: 'Roboto', sans-serif;
-    font-size: 20px;
-}
-
-
-.divider {
-    border-top: 1px solid #ccc; /* Adjust the color and style as needed */
-    margin-top: 20px; /* Adjust the margin-top value to control the spacing */
+    font-size: 18px;
 }
 
 
 .navbar {
     display: flex;
     align-items: center;
-    padding: 10px;
+    padding: 0.3rem;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
@@ -38,7 +32,7 @@ nav ul li {
     display: inline-block;
     position: relative; /* Add relative positioning */
     transition: background-color 0.3s, color 0.3s;
-    padding: 1.2rem;
+    padding: 0.3rem;
 }
 
 /* Add a transparent border around the text */
@@ -74,8 +68,8 @@ nav ul li:hover a {
 }
 
 .row .col-2 h1 {
-    font-size: 45px;
-    line-height: 60px;
+    font-size: 3rem;
+    line-height: 4rem;
 }
 
 .row .col-2 .see-more {
@@ -88,10 +82,14 @@ nav ul li:hover a {
     margin: 2.5rem 0.5rem;
 }
 
+.row .col-2 .see-more:hover {
+    background-color: #000000;
+}
+
 .container {
     max-width: 1366px;
     margin: auto;
-    padding: 20px;
+    padding: 3rem;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
@@ -99,3 +97,64 @@ nav ul li:hover a {
  padding-top: 10rem;
 }
 
+.categories {
+    margin: 5rem 0;
+}
+
+.categories .col-3 {
+    flex-basis: 30%;
+    min-width: 10rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.categories .col-3 img {
+    width: 100%;
+}
+
+/* Age Verification */
+.overlay, .modal#age-verification {
+    display: block;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+.overlay {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 1;
+}
+
+.modal#age-verification {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.modal#age-verification .modal-content {
+    text-align: center;
+    padding: 2rem;
+    font-size: 24px;
+}
+
+.modal-content button {
+    margin: 1rem;
+    padding: 1rem 2rem;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+/* Add space between h2 and p, and p and buttons */
+.modal-content h2, .modal-content p {
+    margin-bottom: 1rem;
+}
+/* End Age Verification */

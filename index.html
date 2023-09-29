@@ -5,9 +5,10 @@
     <!-------------------------------------------------------------------------------------->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
 
     <!-------------------------------------------------------------------------------------->
     <meta charset="UTF-8">
@@ -18,6 +19,19 @@
 
 
 <body>
+    <script src="js/script.js"></script>
+    <div class="age-popup">
+        <div id="overlay" class="overlay"></div>
+        <div id="age-verification" class="modal">
+            <div class="modal-content">
+                <h2>Age Verification</h2>
+                <p>Please make sure that you are 19 or older!!!</p>
+                <button id="yesBtn">Yes</button>
+                <button id="noBtn">No</button>
+            </div>
+        </div>
+    </div>
+    <!-------------------------------------- #header -------------------------------------->
     <div class="header">
         <div class="container">
             <div class="navbar">
@@ -29,10 +43,11 @@
                 <nav>
                     <ul>
                         <li><a href="#" >Home</a></li>
-                        <li><a href="#" >Product</a></li>
-                        <li><a href="#" >Category</a></li>
+                        <li><a href="#" >Products</a></li>
                         <li><a href="#" >Blog</a></li>
-                        <li><a href="#" >About us</a></li>
+                        <li><a href="#" >About</a></li>
+                        <li><a href="#" >Contact</a></li>
+                        <li><a href="#" >Cart</a></li>
                     </ul>
                 </nav>
             </div>
@@ -49,6 +64,25 @@
                 </div>
                 <div class="col-2">
                     <img src="images/cannabis-flower.png" alt="flower">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!---------------------------------- #Categories ----------------------------------------->
+    <div class="container">
+        <div class="categories">
+            <div class="row">
+                <div class="col-3">
+                    <img src="temp-images/category-1.jpg" alt="">
+                    <span>Marajuna</span>
+                </div>
+                <div class="col-3">
+                    <img src="temp-images/category-2.jpg" alt="">
+                    <span>Flower</span>
+                </div>
+                <div class="col-3">
+                    <img src="temp-images/category-3.jpg" alt="">
+                    <span>Pre-rolls</span>
                 </div>
             </div>
         </div>
